@@ -1,6 +1,7 @@
 
 window.addEventListener('DOMContentLoaded', (event) => {
     const elmWord = document.querySelector('#word');
+    elmWord.focus();
     document.querySelector('#btnAlc').addEventListener('click', () => {
         if (elmWord.value == '') return;
         const wordEscaped = encodeURIComponent(elmWord.value);
