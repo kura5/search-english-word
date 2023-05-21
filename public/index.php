@@ -22,7 +22,7 @@ if (array_key_exists('word', $_GET)) {
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <title>英語の単語やフレーズを調べる。</title> 
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/main.css?t=1"> 
+  <link rel="stylesheet" href="./css/main.css?t=2">
   <script src="js/main.js" defer></script>
 </head> 
 <body> 
