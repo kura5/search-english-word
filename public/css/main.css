@@ -2,6 +2,10 @@ body {
   margin: 0 .5em;
 }
 
+caption {
+  text-align: left;
+}
+
 .wordArea {
     margin: 1em auto;
 }

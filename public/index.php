@@ -38,7 +38,7 @@ echo file_get_contents('./css/main.css');
     </div>
     <div class="table-wrapper"> 
         <table class="searchTable">
-        <caption>検索を実行する</caption>
+        <caption>この文字列で検索を実行する</caption>
         <thead>
         <tr>
           <th>サイト</th>
