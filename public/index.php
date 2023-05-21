@@ -21,7 +21,7 @@ if (array_key_exists('word', $_GET)) {
   <meta name="description" content="英語の単語やフレーズを調べる。"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
   <title>英語の単語やフレーズを調べる。</title> 
-  <link rel="stylesheet" href="./css/main.css"> 
+  <link rel="stylesheet" href="./css/main.css?t=1"> 
   <script src="js/main.js" defer></script>
 </head> 
 <body> 

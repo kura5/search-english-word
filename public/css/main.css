@@ -47,10 +47,10 @@ table.searchTable > tbody > tr > td:nth-child(2) {
   font-size: smaller;
 }
 
-button.btnSearch:after {
+button.btnSearch::after {
   content: '検索する';
 }
-button.btnOpen:after {
+button.btnOpen::after {
   content: 'サイトを開く';
 }
 @media (max-width: 820px) {
