@@ -1,3 +1,18 @@
+<?php
+ini_set('display_errors', '0');
+ini_set('display_startup_errors', '0');
+error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
+
+function e($html) {
+  return htmlspecialchars($html, ENT_QUOTES);
+}
+
+$word = '';
+if (array_key_exists('word', $_GET)) {
+  $word = $_GET['word'];
+}
+
+?>
 <!DOCTYPE html>
 <html lang="ja"> 
 <head> 
@@ -14,7 +29,7 @@
     <h1>英単語・フレーズ検索</h1>
 
     <div class="wordArea">
-        <label for="word">検索する文字列：</label><input type="text" id="word" name="word">
+        <label for="word">検索する文字列：</label><input type="text" id="word" name="word" value="<?php echo(e($word)); ?>">
     </div>
     <div class="table-wrapper"> 
         <table class="searchTable">
