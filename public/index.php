@@ -131,7 +131,7 @@ echo file_get_contents('./css/main.css');
         </table>
 
         <table class="linkOpenTable">
-        <caption>サイトを開くだけ</caption>
+        <caption>こちらはサイトを開くだけ</caption>
         <thead>
         <tr>
           <th>サイト</th>
