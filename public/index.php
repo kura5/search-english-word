@@ -162,6 +162,11 @@ if (array_key_exists('word', $_GET)) {
         </tbody>
         </table>
     </div>
+
+    <div class="note">
+      <p>* このページに GETパラメータ 'word' を指定してアクセスすると、その値が検索フィールドにセットされる。</p>
+    </div>
+
     </main>
 </body> 
 </html>
