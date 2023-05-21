@@ -100,7 +100,7 @@ if (array_key_exists('word', $_GET)) {
         </tr>
         <tr>
           <td>
-            <img src="https://www.google.com/s2/favicons?domain=netspeak.org&amp;sz=15" height="15" width="15" alt="">
+            <img src="./images/favicon-default1.png" height="15" width="15" alt="">
             Netspeak
           </td>
           <td><button id="btnNetspeak" class="btnSearch"></button></td>
@@ -137,7 +137,7 @@ if (array_key_exists('word', $_GET)) {
         <tbody>
         <tr>
           <td>
-            <img src="https://www.google.com/s2/favicons?domain=idiomsearch.lsti.ucl.ac.be&amp;sz=15" height="15" width="15" alt="">
+            <img src="./images/favicon-default1.png" height="15" width="15" alt="">
             IDIOM Search
           </td>
           <td><button id="btnIdiomSearch" class="btnOpen"></button></td>
@@ -145,7 +145,7 @@ if (array_key_exists('word', $_GET)) {
         </tr>
         <tr>
           <td>
-            <img src="https://www.google.com/s2/favicons?domain=multiwordunitsprofiler.pythonanywhere.com&amp;sz=15" height="15" width="15" alt="">
+            <img src="./images/favicon-default1.png" height="15" width="15" alt="">
             Multi-Word Units Profiler
           </td>
           <td><button id="btnMwup" class="btnOpen"></button></td>
