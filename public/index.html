@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content="英語の単語やフレーズを調べる。"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <title>英語の単語やフレーズを調べる。</title> 
+  <link rel="stylesheet" href="./css/main.css"> 
+  <script src="js/main.js" defer></script>
+</head> 
+<body> 
+    <h1>英単語・フレーズ検索</h1>
+
+    <div class="wordArea">
+        <label for="word">検索する文字列：</label><input type="text" id="word" name="word"></input>
+    </div>
+    <div class="table-wrapper"> 
+        <table class="searchTable">
+        <caption>検索を実行する</caption>
+        <thead>
+        <tr>
+          <th>サイト</th>
+          <th>検索</th>
+          <th>説明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>英辞郎 (ALC)</td>
+          <td><button id="btnAlc">検索する</button></td>
+          <td>和英辞典</td>
+        </tr>
+        <tr>
+          <td>Weblio</td>
+          <td><button id="btnWeblio">検索する</button></td>
+          <td>いろいろ</td>
+        </tr>
+        <tr>
+          <td>Oxf</td>
+          <td><button id="btnOxf">検索する</button></td>
+          <td>英英辞典。</td>
+        </tr>
+        <tr>
+          <td>Dictionary.com</td>
+          <td><button id="btnDictionaryCom">検索する</button></td>
+          <td>英英辞典。</td>
+        </tr>
+        <tr>
+          <td>Thesaurus.com</td>
+          <td><button id="btnThesaurusCom">検索する</button></td>
+          <td>シソーラス。</td>
+        </tr>
+        <tr>
+          <td>SKELL (Word sketch)</td>
+          <td><button id="btnSkell">検索する</button></td>
+          <td>実際の使い方が分かる（コロケーション）。</td>
+        </tr>
+        <tr>
+          <td>Just the Word</td>
+          <td><button id="btnJustTheWord">検索する</button></td>
+          <td>コロケーション。</td>
+        </tr>
+        <tr>
+          <td>Netspeak</td>
+          <td><button id="btnNetspeak">検索する</button></td>
+          <td>コロケーション。</td>
+        </tr>
+        <tr>
+          <td>YouGlish.com</td>
+          <td><button id="btnYouGlish">検索する</button></td>
+          <td>指定したフレーズを発音している動画を再生してくれる。</td>
+        </tr>
+        <tr>
+          <td>URbaN</td>
+          <td><button id="btnUrban">検索する</button></td>
+          <td>スラングも検索できる。</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <table class="linkOpenTable">
+        <caption>サイトを開くだけ</caption>
+        <thead>
+        <tr>
+          <th>サイト</th>
+          <th>検索</th>
+          <th>説明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>IDIOM Search</td>
+          <td><button id="btnIdiomSearch">サイトを開く</button></td>
+          <td>定型表現をハイライトしてくれる。</td>
+        </tr>
+        <tr>
+          <td>Multi-Word Units Profiler</td>
+          <td><button id="btnMwup">サイトを開く</button></td>
+          <td>定型表現をハイライトしてくれる。</td>
+        </tr>
+        <tr>
+          <td>Phrase Profiler</td>
+          <td><button id="btnPhraseProfiler">サイトを開く</button></td>
+          <td>定型表現をハイライトしてくれる。</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+
+
+</body> 
+</html>

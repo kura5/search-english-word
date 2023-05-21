@@ -1,0 +1,44 @@
+.wordArea {
+    margin: 1em auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  margin-bottom: 20px;
+  /*width: 100%;
+  max-width: 100%;*/
+}
+table tr th {
+  color: black;
+  background-color: #b6dbf2;
+}
+table tr th,
+table tr td {
+  padding: 5px;
+  border: 1px solid #999;
+  /*font-size: 13px;
+  line-height: 18px;*/
+}
+table tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+button {
+  margin: .1em .5em;
+  padding: 3px 10px;
+  border: 0;
+  background-color: #3498db;
+  border-radius: 0;
+  color: white;
+  box-shadow: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #5aace2;
+}
+table.searchTable > tbody > tr > td:nth-child(2) {
+  text-align: center;
+}
