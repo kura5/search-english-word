@@ -60,4 +60,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnPhraseProfiler').addEventListener('click', () => {
         window.open(`https://www.lextutor.ca/vp/collocs/`, '_blank');
     });
+    document.querySelector('#btnDeepL').addEventListener('click', () => {
+        window.open(`https://www.deepl.com/translator`, '_blank');
+    });
+    document.querySelector('#btnDeepLWrite').addEventListener('click', () => {
+        window.open(`https://www.deepl.com/write`, '_blank');
+    });
 }); 
