@@ -46,3 +46,16 @@ table.searchTable > tbody > tr > td:nth-child(2) {
 .note > p {
   font-size: smaller;
 }
+
+button.btnSearch:after {
+  content: '検索する';
+}
+button.btnOpen:after {
+  content: 'サイトを開く';
+}
+@media (max-width: 820px) {
+  button.btnSearch:after,
+  button.btnOpen:after {
+    content: '🔍';
+  }
+}
