@@ -61,7 +61,7 @@ if (array_key_exists('word', $_GET)) {
         <tr>
           <td>
             <img src="https://www.google.com/s2/favicons?domain=www.oxfordlearnersdictionaries.com&amp;sz=15" height="15" width="15" alt="">
-            Oxf
+            Oxford Learner's Dictionaries
           </td>
           <td><button id="btnOxf">検索する</button></td>
           <td>英英辞典。</td>
