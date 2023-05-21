@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnOxf').addEventListener('click', () => {
         if (elmWord.value == '') return;
         const wordEscaped = encodeURIComponent(elmWord.value);
-        window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/company?q=${wordEscaped}`, '_blank');
+        window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${wordEscaped}_1?q=${wordEscaped}`, '_blank');
     });
     document.querySelector('#btnDictionaryCom').addEventListener('click', () => {
         if (elmWord.value == '') return;
