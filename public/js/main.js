@@ -21,7 +21,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             wordEscapedInUrl = buildWordEscaped(s, '-');
             wordEscapedInParam = buildWordEscaped(s, '+');
         } else {
-            wordEscapedInUrl = encodeURIComponent(s) + '_1';
+            wordEscapedInUrl = encodeURIComponent(s) + '_1'; // '_1' means verb?
             wordEscapedInParam = encodeURIComponent(s);
         }
         window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${wordEscapedInUrl}?q=${wordEscapedInParam}`, '_blank');
