@@ -20,7 +20,7 @@ if (array_key_exists('word', $_GET)) {
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <meta name="description" content="英語の単語やフレーズを調べる。"> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <title>英語の単語やフレーズを調べる。</title> 
+  <title>英単語・フレーズ検索</title>
   <style>
 <?php
 echo file_get_contents('./css/normalize.min.css');
@@ -101,7 +101,8 @@ echo file_get_contents('./css/main.css');
             Just the Word
           </td>
           <td><button id="btnJustTheWord" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
-          <td>コロケーション</td>
+          <td>コロケーション。句動詞などの組み合わせをチェックできる。
+          </td>
         </tr>
         <tr>
           <td>
