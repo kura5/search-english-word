@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=1" defer></script>
+  <script src="js/main.js?t=2" defer></script>
 </head> 
 <body> 
     <main>
