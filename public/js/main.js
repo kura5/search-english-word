@@ -13,18 +13,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         window.open(`https://ejje.weblio.jp/content/${wordEscaped}`, '_blank');
     });
     document.querySelector('#btnOxf').addEventListener('click', () => {
-        const s = elmWord.value.trim();
-        let wordEscapedInUrl, wordEscapedInParam;
-        if (s == '') return;
-        if (/\s/.test(s)) {
-            const buildWordEscaped = (s, sep) => s.split(/\s+/).map(w => encodeURIComponent(w)).join(sep);
-            wordEscapedInUrl = buildWordEscaped(s, '-');
-            wordEscapedInParam = buildWordEscaped(s, '+');
-        } else {
-            wordEscapedInUrl = encodeURIComponent(s) + '_1'; // '_1' means verb?
-            wordEscapedInParam = encodeURIComponent(s);
-        }
-        window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${wordEscapedInUrl}?q=${wordEscapedInParam}`, '_blank');
+        if (elmWord.value == '') return;
+        const wordEscaped = encodeURIComponent(elmWord.value);
+        window.open(`https://www.oxfordlearnersdictionaries.com/search/english/direct/?q=${wordEscaped}`, '_blank');
     });
     document.querySelector('#btnDictionaryCom').addEventListener('click', () => {
         if (elmWord.value == '') return;
