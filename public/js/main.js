@@ -17,11 +17,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         let wordEscapedInUrl, wordEscapedInParam;
         if (s == '') return;
         if (/\s/.test(s)) {
-            wordEscapedInUrl = s.split(/\s+/).map(w => encodeURIComponent(w)).join('-');
-            wordEscapedInParam = s.split(/\s+/).map(w => encodeURIComponent(w)).join('+');
+            const buildWordEscaped = (s, sep) => s.split(/\s+/).map(w => encodeURIComponent(w)).join(sep);
+            wordEscapedInUrl = buildWordEscaped(s, '-');
+            wordEscapedInParam = buildWordEscaped(s, '+');
         } else {
-            wordEscapedInUrl = encodeURIComponent(s.trim()) + '_1';
-            wordEscapedInParam = encodeURIComponent(s.trim());
+            wordEscapedInUrl = encodeURIComponent(s) + '_1';
+            wordEscapedInParam = encodeURIComponent(s);
         }
         window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${wordEscapedInUrl}?q=${wordEscapedInParam}`, '_blank');
     });
