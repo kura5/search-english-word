@@ -13,9 +13,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         window.open(`https://ejje.weblio.jp/content/${wordEscaped}`, '_blank');
     });
     document.querySelector('#btnOxf').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
-        window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${wordEscaped}_1?q=${wordEscaped}`, '_blank');
+        const s = elmWord.value.trim();
+        let wordEscapedInUrl, wordEscapedInParam;
+        if (s == '') return;
+        if (/\s/.test(s)) {
+            wordEscapedInUrl = s.split(/\s+/).map(w => encodeURIComponent(w)).join('-');
+            wordEscapedInParam = s.split(/\s+/).map(w => encodeURIComponent(w)).join('+');
+        } else {
+            wordEscapedInUrl = encodeURIComponent(s.trim()) + '_1';
+            wordEscapedInParam = encodeURIComponent(s.trim());
+        }
+        window.open(`https://www.oxfordlearnersdictionaries.com/definition/english/${wordEscapedInUrl}?q=${wordEscapedInParam}`, '_blank');
     });
     document.querySelector('#btnDictionaryCom').addEventListener('click', () => {
         if (elmWord.value == '') return;
