@@ -42,15 +42,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const wordEscaped = encodeURIComponent(elmWord.value);
         window.open(`https://netspeak.org/#q=${wordEscaped}&corpus=web-en`, '_blank');
     });
-    document.querySelector('#btnYouGlish').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
-        window.open(`https://youglish.com/pronounce/${wordEscaped}/english?`, '_blank');
-    });
     document.querySelector('#btnUrban').addEventListener('click', () => {
         if (elmWord.value == '') return;
         const wordEscaped = encodeURIComponent(elmWord.value);
         window.open(`https://www.urbandictionary.com/define.php?term=${wordEscaped}`, '_blank');
+    });
+    document.querySelector('#btnYouGlish').addEventListener('click', () => {
+        if (elmWord.value == '') return;
+        const wordEscaped = encodeURIComponent(elmWord.value);
+        window.open(`https://youglish.com/pronounce/${wordEscaped}/english?`, '_blank');
     });
     document.querySelector('#btnIdiomSearch').addEventListener('click', () => {
         window.open(`https://idiomsearch.lsti.ucl.ac.be/`, '_blank');
@@ -66,5 +66,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     });
     document.querySelector('#btnDeepLWrite').addEventListener('click', () => {
         window.open(`https://www.deepl.com/write`, '_blank');
+    });
+    document.querySelector('#btnToPhonetics').addEventListener('click', () => {
+        window.open(`https://tophonetics.com/ja/`, '_blank');
     });
 }); 

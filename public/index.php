@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=3" defer></script>
+  <script src="js/main.js?t=4" defer></script>
 </head> 
 <body> 
     <main>
@@ -114,19 +114,19 @@ echo file_get_contents('./css/main.css');
         </tr>
         <tr>
           <td>
-            <img src="https://www.google.com/s2/favicons?domain=youglish.com&amp;sz=15" height="15" width="15" alt="">
-            YouGlish.com
-          </td>
-          <td><button id="btnYouGlish" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
-          <td>指定したフレーズを発音している動画を再生してくれる。</td>
-        </tr>
-        <tr>
-          <td>
             <img src="https://www.google.com/s2/favicons?domain=www.urbandictionary.com&amp;sz=15" height="15" width="15" alt="">
             URbaN
           </td>
           <td><button id="btnUrban" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
           <td>スラングも検索できる。</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=youglish.com&amp;sz=15" height="15" width="15" alt="">
+            YouGlish.com
+          </td>
+          <td><button id="btnYouGlish" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
+          <td>指定したフレーズを発音している動画を再生してくれる。</td>
         </tr>
         </tbody>
         </table>
@@ -180,6 +180,14 @@ echo file_get_contents('./css/main.css');
           </td>
           <td><button id="btnDeepLWrite" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
           <td>英文を改善するツール</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=tophonetics.com&amp;sz=15" height="15" width="15" alt="">
+            toPhonetics
+          </td>
+          <td><button id="btnToPhonetics" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
+          <td>英文を発音記号に変換してくれる。</td>
         </tr>
         </tbody>
         </table>
