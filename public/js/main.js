@@ -2,72 +2,90 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     const elmWord = document.querySelector('#word');
     elmWord.focus();
-    document.querySelector('#btnAlc').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    function searchAlc(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://eow.alc.co.jp/search?q=${wordEscaped}`, '_blank');
-    });
-    document.querySelector('#btnWeblio').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchWeblio(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://ejje.weblio.jp/content/${wordEscaped}`, '_blank');
-    });
-    document.querySelector('#btnOxf').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchOxf(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://www.oxfordlearnersdictionaries.com/search/english/direct/?q=${wordEscaped}`, '_blank');
-    });
-    document.querySelector('#btnDictionaryCom').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+
+    }
+    function searchDictionaryCom(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://www.dictionary.com/browse/${wordEscaped}`, '_blank');
-    });
-    document.querySelector('#btnThesaurusCom').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchThesaurusCom(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://www.thesaurus.com/browse/${wordEscaped}`, '_blank');
-    });
-    document.querySelector('#btnSkell').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchSkell(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://skell.sketchengine.eu/#result?f=wordsketch&lang=en&query=${wordEscaped}`, '_blank');
-    });
-    document.querySelector('#btnJustTheWord').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchJustTheWord(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`http://www.just-the-word.com/main.pl?word=${wordEscaped}&mode=alternatives`, '_blank');
-    });
-    document.querySelector('#btnNetspeak').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchNetspeak(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://netspeak.org/#q=${wordEscaped}&corpus=web-en`, '_blank');
-    });
-    document.querySelector('#btnUrban').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchUrban(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://www.urbandictionary.com/define.php?term=${wordEscaped}`, '_blank');
-    });
-    document.querySelector('#btnYouGlish').addEventListener('click', () => {
-        if (elmWord.value == '') return;
-        const wordEscaped = encodeURIComponent(elmWord.value);
+    }
+    function searchYouGlish(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
         window.open(`https://youglish.com/pronounce/${wordEscaped}/english?`, '_blank');
-    });
-    document.querySelector('#btnIdiomSearch').addEventListener('click', () => {
+    }
+    function openIdiomSearch() {
         window.open(`https://idiomsearch.lsti.ucl.ac.be/`, '_blank');
-    });
-    document.querySelector('#btnMwup').addEventListener('click', () => {
+    }
+    function openMwup() {
         window.open(`https://multiwordunitsprofiler.pythonanywhere.com/`, '_blank');
-    });
-    document.querySelector('#btnPhraseProfiler').addEventListener('click', () => {
+    }
+    function openPhraseProfiler() {
         window.open(`https://www.lextutor.ca/vp/collocs/`, '_blank');
-    });
-    document.querySelector('#btnDeepL').addEventListener('click', () => {
+    }
+    function openDeepL() {
         window.open(`https://www.deepl.com/translator`, '_blank');
-    });
-    document.querySelector('#btnDeepLWrite').addEventListener('click', () => {
+    }
+    function openDeepLWrite() {
         window.open(`https://www.deepl.com/write`, '_blank');
-    });
-    document.querySelector('#btnToPhonetics').addEventListener('click', () => {
+    }
+    function openToPhonetics() {
         window.open(`https://tophonetics.com/ja/`, '_blank');
-    });
+    }
+
+    document.querySelector('#btnAlc').addEventListener('click', () => searchAlc(elmWord.value));
+    document.querySelector('#btnWeblio').addEventListener('click', () => searchWeblio(elmWord.value));
+    document.querySelector('#btnOxf').addEventListener('click', () => searchOxf(elmWord.value));
+    document.querySelector('#btnDictionaryCom').addEventListener('click', () => searchDictionaryCom(elmWord.value));
+    document.querySelector('#btnThesaurusCom').addEventListener('click', () => searchThesaurusCom(elmWord.value));
+    document.querySelector('#btnSkell').addEventListener('click', () => searchSkell(elmWord.value));
+    document.querySelector('#btnJustTheWord').addEventListener('click', () => searchJustTheWord(elmWord.value));
+    document.querySelector('#btnNetspeak').addEventListener('click', () => searchNetspeak(elmWord.value));
+    document.querySelector('#btnUrban').addEventListener('click', () => searchUrban(elmWord.value));
+    document.querySelector('#btnYouGlish').addEventListener('click', () => searchYouGlish(elmWord.value));
+    document.querySelector('#btnIdiomSearch').addEventListener('click', openIdiomSearch);
+    document.querySelector('#btnMwup').addEventListener('click', openMwup);
+    document.querySelector('#btnPhraseProfiler').addEventListener('click', openPhraseProfiler);
+    document.querySelector('#btnDeepL').addEventListener('click', openDeepL);
+    document.querySelector('#btnDeepLWrite').addEventListener('click', openDeepLWrite);
+    document.querySelector('#btnToPhonetics').addEventListener('click', openToPhonetics);
 }); 
