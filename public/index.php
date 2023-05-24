@@ -37,7 +37,7 @@ echo file_get_contents('./css/main.css');
         <label for="word">検索する文字列：</label><input type="text" id="word" name="word" value="<?php echo(e($word)); ?>">
     </div>
     <div class="table-wrapper"> 
-        <table class="searchTable">
+      <table class="searchTable">
         <caption></caption>
         <thead>
         <tr>
@@ -129,9 +129,9 @@ echo file_get_contents('./css/main.css');
           <td>指定したフレーズを発音している動画を再生してくれる。</td>
         </tr>
         </tbody>
-        </table>
+      </table>
 
-        <table class="linkOpenTable">
+      <table class="linkOpenTable">
         <caption>こちらはサイトを開くだけ</caption>
         <thead>
         <tr>
@@ -191,6 +191,29 @@ echo file_get_contents('./css/main.css');
         </tr>
         </tbody>
         </table>
+
+        <table class="writingLinkTable">
+        <caption>英作文関連</caption>
+        <thead>
+        <tr>
+          <th>サイト</th>
+          <th>開く</th>
+          <th>説明</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=englister.yunomy.com&amp;sz=15" height="15" width="15" alt="">
+            Englister
+          </td>
+          <td><button id="btnEnglister" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
+          <td>英作文の練習。フレーズのメモも保存できる。</td>
+        </tr>
+      </tbody>
+    </table>
+
+
     </div>
 
     <div class="note">
