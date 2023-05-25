@@ -128,6 +128,14 @@ echo file_get_contents('./css/main.css');
           <td><button id="btnYouGlish" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
           <td>指定したフレーズを発音している動画を再生してくれる。</td>
         </tr>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=google.com&amp;sz=15" height="15" width="15" alt="">
+            Google
+          </td>
+          <td><button id="btnGoogle" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
+          <td>ググる。画像検索でイメージのも良し。</td>
+        </tr>
         </tbody>
       </table>
 

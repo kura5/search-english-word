@@ -53,6 +53,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const wordEscaped = encodeURIComponent(word);
         window.open(`https://youglish.com/pronounce/${wordEscaped}/english?`, '_blank');
     }
+    function searchGoogle(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
+        window.open(`https://www.google.com/search?q=${wordEscaped}`, '_blank');
+    }
+
     function openIdiomSearch() {
         window.open(`https://idiomsearch.lsti.ucl.ac.be/`, '_blank');
     }
@@ -85,6 +91,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnNetspeak').addEventListener('click', () => searchNetspeak(elmWord.value));
     document.querySelector('#btnUrban').addEventListener('click', () => searchUrban(elmWord.value));
     document.querySelector('#btnYouGlish').addEventListener('click', () => searchYouGlish(elmWord.value));
+    document.querySelector('#btnGoogle').addEventListener('click', () => searchGoogle(elmWord.value));
     document.querySelector('#btnIdiomSearch').addEventListener('click', openIdiomSearch);
     document.querySelector('#btnMwup').addEventListener('click', openMwup);
     document.querySelector('#btnPhraseProfiler').addEventListener('click', openPhraseProfiler);
