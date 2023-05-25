@@ -134,7 +134,7 @@ echo file_get_contents('./css/main.css');
             Google
           </td>
           <td><button id="btnGoogle" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
-          <td>ググる。画像検索でイメージのも良し。</td>
+          <td>ググる。画像検索でイメージを覚えるのも良し。</td>
         </tr>
         </tbody>
       </table>
