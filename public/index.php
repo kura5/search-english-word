@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=7" defer></script>
+  <script src="js/main.js?t=8" defer></script>
 </head> 
 <body> 
     <main>
@@ -200,7 +200,7 @@ echo file_get_contents('./css/main.css');
         </tbody>
         </table>
 
-        <table class="writingLinkTable">
+        <!--<table class="writingLinkTable">
         <caption>英作文関連</caption>
         <thead>
         <tr>
@@ -218,9 +218,8 @@ echo file_get_contents('./css/main.css');
           <td><button id="btnEnglister" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
           <td>英作文の練習。フレーズのメモも保存できる。</td>
         </tr>
-      </tbody>
-    </table>
-
+        </tbody>
+        </table>-->
 
     </div>
 
