@@ -59,6 +59,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         window.open(`https://www.google.com/search?q=${wordEscaped}`, '_blank');
     }
 
+    function openQuillBotAI() {
+        window.open(`https://quillbot.com/grammar-check`, '_blank');
+    }
     function openIdiomSearch() {
         window.open(`https://idiomsearch.lsti.ucl.ac.be/`, '_blank');
     }
@@ -93,6 +96,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnYouGlish').addEventListener('click', () => searchYouGlish(elmWord.value));
     document.querySelector('#btnGoogle').addEventListener('click', () => searchGoogle(elmWord.value));
     document.querySelector('#btnIdiomSearch').addEventListener('click', openIdiomSearch);
+    document.querySelector('#btnQuillBotAI').addEventListener('click', openQuillBotAI);
     document.querySelector('#btnMwup').addEventListener('click', openMwup);
     document.querySelector('#btnPhraseProfiler').addEventListener('click', openPhraseProfiler);
     document.querySelector('#btnDeepL').addEventListener('click', openDeepL);

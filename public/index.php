@@ -136,6 +136,14 @@ echo file_get_contents('./css/main.css');
           <td><button id="btnGoogle" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
           <td>ググる。画像検索でイメージを覚えるのも良し。</td>
         </tr>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=quillbot.com&amp;sz=15" height="15" width="15" alt="">
+             QuillBot AI
+          </td>
+          <td><button id="btnQuillBotAI" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
+          <td>文法チェッカー</td>
+        </tr>
         </tbody>
       </table>
 
