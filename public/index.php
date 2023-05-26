@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=12" defer></script>
+  <script src="js/main.js?t=13" defer></script>
 </head> 
 <body> 
     <main>
@@ -218,6 +218,14 @@ echo file_get_contents('./css/main.css');
         </tr>
         </thead>
         <tbody>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=writeandimprove.com&amp;sz=15" height="15" width="15" alt="">
+            Write&amp;Improve
+          </td>
+          <td><button id="btnWriteAndImprove" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
+          <td>英作文の練習。</td>
+        </tr>
         <tr>
           <td class="tdEnglister">
             <img src="https://www.google.com/s2/favicons?domain=englister.yunomy.com&amp;sz=15" height="15" width="15" alt="">

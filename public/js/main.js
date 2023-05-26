@@ -80,6 +80,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function openToPhonetics() {
         window.open(`https://tophonetics.com/ja/`, '_blank');
     }
+    function openWriteAndImprove() {
+        window.open(`https://writeandimprove.com/`, '_blank');
+    }
     function openEnglister() {
         window.open(`https://englister.yunomy.com/`, '_blank');
     }
@@ -102,5 +105,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnDeepL').addEventListener('click', openDeepL);
     document.querySelector('#btnDeepLWrite').addEventListener('click', openDeepLWrite);
     document.querySelector('#btnToPhonetics').addEventListener('click', openToPhonetics);
+    document.querySelector('#btnWriteAndImprove').addEventListener('click', openWriteAndImprove);
     document.querySelector('#btnEnglister').addEventListener('click', openEnglister);
 }); 
