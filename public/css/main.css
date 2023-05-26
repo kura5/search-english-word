@@ -34,6 +34,9 @@ table tr td {
 table tr:nth-child(odd) {
   background-color: #f0f0f0;
 }
+table.writingLinkTable tbody tr td.tdEnglister {
+  min-width: 88px;
+}
 
 button {
   margin: .1em 0;

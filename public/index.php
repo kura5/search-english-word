@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=11" defer></script>
+  <script src="js/main.js?t=12" defer></script>
 </head> 
 <body> 
     <main>
@@ -219,7 +219,7 @@ echo file_get_contents('./css/main.css');
         </thead>
         <tbody>
         <tr>
-          <td>
+          <td class="tdEnglister">
             <img src="https://www.google.com/s2/favicons?domain=englister.yunomy.com&amp;sz=15" height="15" width="15" alt="">
             Englister
           </td>
