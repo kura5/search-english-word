@@ -61,7 +61,7 @@ echo file_get_contents('./css/main.css');
             Weblio
           </td>
           <td><button id="btnWeblio" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
-          <td>いろいろ</td>
+          <td>いろいろ。関連する語。</td>
         </tr>
         <tr>
           <td>
