@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=13" defer></script>
+  <script src="js/main.js?t=14" defer></script>
 </head> 
 <body> 
     <main>
@@ -86,6 +86,14 @@ echo file_get_contents('./css/main.css');
           </td>
           <td><button id="btnThesaurusCom" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
           <td>シソーラス（類語辞典）</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=www.etymonline.com&amp;sz=15" height="15" width="15" alt="">
+            Etymonline
+          </td>
+          <td><button id="btnEtymonline" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
+          <td>語源辞典</td>
         </tr>
         <tr>
           <td>

@@ -28,6 +28,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const wordEscaped = encodeURIComponent(word);
         window.open(`https://www.thesaurus.com/browse/${wordEscaped}`, '_blank');
     }
+    function searchEtymonline(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
+        window.open(`https://www.etymonline.com/search?q=${wordEscaped}`, '_blank');
+    }
     function searchSkell(word) {
         if (word == '') return;
         const wordEscaped = encodeURIComponent(word);
@@ -92,6 +97,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnOxf').addEventListener('click', () => searchOxf(elmWord.value));
     document.querySelector('#btnDictionaryCom').addEventListener('click', () => searchDictionaryCom(elmWord.value));
     document.querySelector('#btnThesaurusCom').addEventListener('click', () => searchThesaurusCom(elmWord.value));
+    document.querySelector('#btnEtymonline').addEventListener('click', () => searchEtymonline(elmWord.value));
     document.querySelector('#btnSkell').addEventListener('click', () => searchSkell(elmWord.value));
     document.querySelector('#btnJustTheWord').addEventListener('click', () => searchJustTheWord(elmWord.value));
     document.querySelector('#btnNetspeak').addEventListener('click', () => searchNetspeak(elmWord.value));
