@@ -167,6 +167,14 @@ echo file_get_contents('./css/main.css');
         <tbody>
         <tr>
           <td>
+            <img src="https://www.google.com/s2/favicons?domain=english.edward.io&amp;sz=15" height="15" width="15" alt="">
+            English Syntax Highlighter
+          </td>
+          <td><button id="btnEngSynHigh" class="btnSearch" title="このサイトで検索する">&#x1f30f;</button></td>
+          <td>品詞を教えてくれる。</td>
+        </tr>
+        <tr>
+          <td>
             <img src="./images/favicon-default1.png" height="15" width="15" alt="">
             IDIOM Search
           </td>
