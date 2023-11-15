@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function searchOxf(word) {
         if (word == '') return;
         const wordEscaped = encodeURIComponent(word);
-        window.open(`https://www.oxfordlearnersdictionaries.com/search/english/?q=${wordEscaped}`, '_blank');
+        window.open(`https://www.oxfordlearnersdictionaries.com/search/english/direct/?q=${wordEscaped}`, '_blank');
 
     }
     function searchDictionaryCom(word) {
