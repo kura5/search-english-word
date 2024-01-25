@@ -64,6 +64,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         window.open(`https://www.google.com/search?q=${wordEscaped}`, '_blank');
     }
 
+    function openCoca() {
+        window.open(`https://www.english-corpora.org/coca/`, '_blank');
+    }
     function openQuillBotAI() {
         window.open(`https://quillbot.com/grammar-check`, '_blank');
     }
@@ -108,6 +111,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnYouGlish').addEventListener('click', () => searchYouGlish(elmWord.value));
     document.querySelector('#btnGoogle').addEventListener('click', () => searchGoogle(elmWord.value));
     document.querySelector('#btnIdiomSearch').addEventListener('click', openIdiomSearch);
+    document.querySelector('#btnCoca').addEventListener('click', openCoca);
     document.querySelector('#btnQuillBotAI').addEventListener('click', openQuillBotAI);
     document.querySelector('#btnEngSynHigh').addEventListener('click', openEngSynHigh);
     document.querySelector('#btnMwup').addEventListener('click', openMwup);
