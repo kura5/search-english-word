@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=15" defer></script>
+  <script src="js/main.js?t=16" defer></script>
 </head> 
 <body> 
     <main>
@@ -102,6 +102,14 @@ echo file_get_contents('./css/main.css');
           </td>
           <td><button id="btnSkell" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
           <td>例文 / コロケーション（実際の使い方）/ 使われ方が似ている単語</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=wordnet.princeton.edu&amp;sz=15" height="15" width="15" alt="">
+            WordNet
+          </td>
+          <td><button id="btnWordNet" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
+          <td>語彙データベース / 関連のある単語や概念のネットワークを探る</td>
         </tr>
         <tr>
           <td>

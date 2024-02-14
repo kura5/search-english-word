@@ -38,6 +38,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         const wordEscaped = encodeURIComponent(word);
         window.open(`https://skell.sketchengine.eu/#result?f=wordsketch&lang=en&query=${wordEscaped}`, '_blank');
     }
+    function searchWordNet(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
+        window.open(`http://wordnetweb.princeton.edu/perl/webwn?s=${wordEscaped}`, '_blank');
+    }
     function searchJustTheWord(word) {
         if (word == '') return;
         const wordEscaped = encodeURIComponent(word);
@@ -105,6 +110,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnThesaurusCom').addEventListener('click', () => searchThesaurusCom(elmWord.value));
     document.querySelector('#btnEtymonline').addEventListener('click', () => searchEtymonline(elmWord.value));
     document.querySelector('#btnSkell').addEventListener('click', () => searchSkell(elmWord.value));
+    document.querySelector('#btnWordNet').addEventListener('click', () => searchWordNet(elmWord.value));
     document.querySelector('#btnJustTheWord').addEventListener('click', () => searchJustTheWord(elmWord.value));
     document.querySelector('#btnNetspeak').addEventListener('click', () => searchNetspeak(elmWord.value));
     document.querySelector('#btnUrban').addEventListener('click', () => searchUrban(elmWord.value));
