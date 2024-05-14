@@ -53,7 +53,7 @@ echo file_get_contents('./css/main.css');
             英辞郎 (ALC)
           </td>
           <td><button id="btnAlc" class="btnSearch" title="このサイトで検索する">&#x1f50d;</button></td>
-          <td>和英辞典</td>
+          <td>翻訳者グループ作成の対訳データベース</td>
         </tr>
         <tr>
           <td>
