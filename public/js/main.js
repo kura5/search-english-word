@@ -18,6 +18,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
         window.open(`https://www.oxfordlearnersdictionaries.com/search/english/direct/?q=${wordEscaped}`, '_blank');
 
     }
+    function searchLongman(word) {
+        if (word == '') return;
+        const wordEscaped = encodeURIComponent(word);
+        window.open(`https://www.ldoceonline.com/search/english/direct/?q=${wordEscaped}`, '_blank');
+    }
     function searchDictionaryCom(word) {
         if (word == '') return;
         const wordEscaped = encodeURIComponent(word);
@@ -106,6 +111,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnAlc').addEventListener('click', () => searchAlc(elmWord.value));
     document.querySelector('#btnWeblio').addEventListener('click', () => searchWeblio(elmWord.value));
     document.querySelector('#btnOxf').addEventListener('click', () => searchOxf(elmWord.value));
+    document.querySelector('#btnLongman').addEventListener('click', () => searchLongman(elmWord.value));
     document.querySelector('#btnDictionaryCom').addEventListener('click', () => searchDictionaryCom(elmWord.value));
     document.querySelector('#btnThesaurusCom').addEventListener('click', () => searchThesaurusCom(elmWord.value));
     document.querySelector('#btnEtymonline').addEventListener('click', () => searchEtymonline(elmWord.value));
