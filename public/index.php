@@ -27,7 +27,7 @@ echo file_get_contents('./css/normalize.min.css');
 echo file_get_contents('./css/main.css');
 ?>
 </style>
-  <script src="js/main.js?t=16" defer></script>
+  <script src="js/main.js?t=17" defer></script>
 </head> 
 <body> 
     <main>
@@ -220,6 +220,14 @@ echo file_get_contents('./css/main.css');
           </td>
           <td><button id="btnPhraseProfiler" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
           <td>定型表現をハイライトしてくれる。</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://www.google.com/s2/favicons?domain=translate.google.co.jp&amp;sz=15" height="15" width="15" alt="">
+            Google翻訳
+          </td>
+          <td><button id="btnGoogleTranslate" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
+          <td>翻訳ツール</td>
         </tr>
         <tr>
           <td>

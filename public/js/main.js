@@ -92,6 +92,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     function openPhraseProfiler() {
         window.open(`https://www.lextutor.ca/vp/collocs/`, '_blank');
     }
+    function openGoogleTranslate() {
+        window.open(`https://translate.google.co.jp/`, '_blank');
+    }
     function openDeepL() {
         window.open(`https://www.deepl.com/translator`, '_blank');
     }
@@ -128,6 +131,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnEngSynHigh').addEventListener('click', openEngSynHigh);
     document.querySelector('#btnMwup').addEventListener('click', openMwup);
     document.querySelector('#btnPhraseProfiler').addEventListener('click', openPhraseProfiler);
+    document.querySelector('#btnGoogleTranslate').addEventListener('click', openGoogleTranslate);
     document.querySelector('#btnDeepL').addEventListener('click', openDeepL);
     document.querySelector('#btnDeepLWrite').addEventListener('click', openDeepLWrite);
     document.querySelector('#btnToPhonetics').addEventListener('click', openToPhonetics);
