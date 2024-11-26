@@ -136,5 +136,5 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelector('#btnDeepLWrite').addEventListener('click', openDeepLWrite);
     document.querySelector('#btnToPhonetics').addEventListener('click', openToPhonetics);
     document.querySelector('#btnWriteAndImprove').addEventListener('click', openWriteAndImprove);
-    document.querySelector('#btnEnglister').addEventListener('click', openEnglister);
+    //document.querySelector('#btnEnglister').addEventListener('click', openEnglister);
 }); 

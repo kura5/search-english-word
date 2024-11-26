@@ -276,11 +276,11 @@ echo file_get_contents('./css/main.css');
         </tr>
         <tr>
           <td class="tdEnglister">
-            <img src="https://www.google.com/s2/favicons?domain=englister.yunomy.com&amp;sz=15" height="15" width="15" alt="">
-            Englister
+            <del><img src="https://www.google.com/s2/favicons?domain=englister.yunomy.com&amp;sz=15" height="15" width="15" alt="">
+            Englister</del>
           </td>
           <td><button id="btnEnglister" class="btnOpen" title="サイトを開く">&#x1f30f;</button></td>
-          <td>英作文の練習。フレーズのメモも保存できる。</td>
+          <td><del>英作文の練習。フレーズのメモも保存できる。</del></td>
         </tr>
         </tbody>
         </table>
